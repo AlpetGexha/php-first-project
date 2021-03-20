@@ -14,7 +14,7 @@ if (isset($_SESSION['ROLE']) &&  $_SESSION['ROLE'] != '1') {
 
 <head>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-    <title>Email</title>
+    <title>Admin Users</title>
 </head>
 
 <body>
@@ -30,6 +30,7 @@ if (isset($_SESSION['ROLE']) &&  $_SESSION['ROLE'] != '1') {
                     <th scope="col">Mbiemri</th>
                     <th scope="col">Username</th>
                     <th scope="col">Email</th>
+                    <th scope="col">Opsioni</th>
                     </th>
                 </tr>
             <tbody>
