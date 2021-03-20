@@ -8,7 +8,7 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
 <nav class="navbar navbar-expand-md bg-dark navbar-dark">
-  <img class="navbar-brand" src="assets/image/Killerlogo.jpg" alt="logo" style="width:50px;">
+  <img class="navbar-brand" src="../assets/image/Killerlogo.jpg" alt="logo" style="width:50px;">
   </div>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
     <span class="navbar-toggler-icon"></span>
@@ -34,3 +34,9 @@
     </ul>
   </div>
 </nav>
+
+<style type="text/css">
+body{
+ background: #222D32;
+ } 
+</style>

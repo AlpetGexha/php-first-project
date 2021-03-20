@@ -42,7 +42,6 @@ if (isset($_SESSION['loggedIn']) && $_SESSION['loggedIn'] == true) {
   <!-- ------------ Boostrap ------------------ -->
   <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
 
-  <!-- ------------ Jquery JS ------------------ -->
   <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
 
   <!-- ------------ Forma per Login ------------------ -->

@@ -18,6 +18,14 @@ if (isset($_SESSION['ROLE']) &&  $_SESSION['ROLE'] != '1') {
 </head>
 
 <body>
+    <style type="text/css"> 
+        body{
+            background: #222D32;
+        }
+         body ,th, td {
+  color: red;
+ }
+    </style>
     <?php include('../items/admin_navbar.php'); ?>
     <div class="container mt-5">
 

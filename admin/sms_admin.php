@@ -17,6 +17,12 @@ if (isset($_SESSION['ROLE']) &&  $_SESSION['ROLE'] != '1') {
     <title>Admin Users</title>
 </head>
 
+<style type="text/css">
+     body ,th, td {
+  color: red;
+ }
+</style>
+
 <body>
     <?php include('../items/admin_navbar.php'); ?>
     <div class="container mt-5">
@@ -36,7 +42,7 @@ if (isset($_SESSION['ROLE']) &&  $_SESSION['ROLE'] != '1') {
                 while (($row = $results->fetch_assoc()) != null) {
                     echo '<tr>';
                     echo "<td>" . $row['id'] . "</td>";
-                    echo '<td>' . '<textarea class="inputat" required=""  name="body" rows="4" cols="30" id="body" readonly+>' . $row['mesazhi'] . '</textarea>' . '</td>';
+                    echo '<td>' . '<textarea class="inputat" required=""  name="body" rows="5" cols="80" id="body" readonly="">' . $row['mesazhi'] . '</textarea>' . '</td>';
                     echo '</tr>';
                 }
                 ?>
