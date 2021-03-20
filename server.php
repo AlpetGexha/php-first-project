@@ -146,14 +146,14 @@ if (isset($_POST['login_submit'])) {
 
 
   if (mysqli_num_rows($results) != 1) { //Nese perdoruesi nuk ekziton
-    $user_error = "Ky p&euml;rdorues nuk ekziston. Regjistrohuni tani <a href='register.php' class='text-info'>Regjistrohu !</a>!!";  //errori per username
+    $msg = "Ky p&euml;rdorues nuk ekziston. Regjistrohuni tani <a href='register.php' class='text-info'>Regjistrohu !</a>!!";  //errori per username
   } else if (password_verify($password, $row['password'])) { //Nese passwordi edhe gabim	dhe passwordi per encyptim
     $_SESSION['username'] = $username; //Username
     $_SESSION['loggedIn'] = true; //Nese passwordi edhe ne rregull
     $_SESSION['ROLE'] = $row['role'];
     header('Location:index.php'); //Shko në faqe kryesore
   } else {
-    $password_error = "Fjalekalimi &euml;sht&euml; gabim"; //errori per Password
+    $msg = "Fjalekalimi &euml;sht&euml; gabim"; //errori per Password
 
   }
 }

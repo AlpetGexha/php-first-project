@@ -1,6 +1,4 @@
 <?php
-$password_error = "";
-$user_error = "";
 $msg = "";
 ?>
 <?php
@@ -57,14 +55,7 @@ if (isset($_SESSION['loggedIn']) && $_SESSION['loggedIn'] == true) {
                 if (!empty($msg)) {
                   echo '<p class="error"> ' . $msg . ' </p>';
                 }
-                //Errori nese usernamei nuk egziston
-                if (!empty($user_error)) {
-                  echo '<p class="error"> ' . $user_error . ' </p>';
-                }
-                //Errori nese passwordi edhe gabim
-                if (!empty($password_error)) {
-                  echo '<p class="error"> ' . $password_error . '</p>';
-                }
+              
                 ?>
                 <label for="username" class="text-info fas fa-user">Username:</label><br>
                 <input type="text" name="username" id="username" class="form-control" required="" placeholder="Username" autofocus="" oninvalid="this.setCustomValidity('Ju lutem shkruani usernamin');" oninput="this.setCustomValidity('');">
