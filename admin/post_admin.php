@@ -1,8 +1,14 @@
-<?php include("../config.php");
-//session
+<?php
+$msg = "";
 session_start();
-ob_start();
+include '../config.php';
+include "../items/need_to_login.php";
+if (isset($_SESSION['ROLE']) &&  $_SESSION['ROLE'] != '1') {
+    header('location: ../index.php');
+    die();
+}
 ?>
+
 <!DOCTYPE html>
 <html>
 
