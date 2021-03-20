@@ -26,6 +26,13 @@
      });
  });
 
+ //Funskino per post_delete (data-text Duke u fshire)
+ $(document).ready(function () {
+     $('#btn_post_delete').click(function () {
+         $(".loader").addClass("is-active");
+     });
+ });
+
  //Funskino per register (data-text Duke u Regjistriar)
  /*
  $(document).ready(function () {

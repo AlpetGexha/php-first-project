@@ -93,7 +93,7 @@ include('items/need_to_login.php');
       echo "<div class='delete'>";
       echo "<td><a href='edit.php? id=" . $row['id'] . "'class='btn btn-success'>Ndrysho</a>
 
-<button type='button' class='btn btn-danger' data-toggle='modal' data-target='#post_" . $row['id'] . "'>
+<button type='button' class='btn btn-danger' data-toggle='modal' data-target='#post1_" . $row['id'] . "'>
  Fshije
 </button></td>"; // Edit/Updates
 
@@ -108,8 +108,7 @@ include('items/need_to_login.php');
 
       echo '
 
-<!-- Modal -->
-<div class="modal fade" id="post_' . $row['id'] . '" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+<div class="modal fade" id="post1_' . $row['id'] . '" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered" role="document">
     <div class="modal-content">
       <div class="modal-header">
