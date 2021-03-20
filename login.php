@@ -33,7 +33,12 @@ if (isset($_SESSION['loggedIn']) && $_SESSION['loggedIn'] == true) {
 </head>
 
 <body>
+  <style type="text/css">
+    .showpassword {
+      padding-left: 20px;
 
+    }
+  </style>
   <!-- ------------ Boostrap ------------------ -->
   <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
 
@@ -70,7 +75,9 @@ if (isset($_SESSION['loggedIn']) && $_SESSION['loggedIn'] == true) {
 
                 <input type="password" name="password" id="password" class="form-control" required="" placeholder="Password" oninvalid="this.setCustomValidity('Ju lutem shkruani passwordin');" oninput="this.setCustomValidity('');">
                 <!-- <input type="checkbox" class="form-check-input" onclick="myFunction()" >Shiko Passowrdin -->
-
+                <div class="showpassword">
+                  <input  type="checkbox" class="form-check-input" id="show_password"><label class="text-info">Shiko passwordin</label>
+                </div>
                 <a href="forgotPassword.php" class="forgot_link" style="color: red;">Harruat passwordin?</a>
               </div>
               <div class="form-group">

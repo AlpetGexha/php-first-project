@@ -142,8 +142,7 @@ if (isset($_POST['login_submit'])) {
   $sql = "SELECT * from users where username = '$username'";
   $results = mysqli_query($db, $sql);
   $row = $results->fetch_assoc();
-  $_SESSION['ROLE'] = $row['role'];
-  $_SESSION['is_login'] = 'yes';
+  
 
 
   if (mysqli_num_rows($results) != 1) { //Nese perdoruesi nuk ekziton
@@ -151,6 +150,7 @@ if (isset($_POST['login_submit'])) {
   } else if (password_verify($password, $row['password'])) { //Nese passwordi edhe gabim	dhe passwordi per encyptim
     $_SESSION['username'] = $username; //Username
     $_SESSION['loggedIn'] = true; //Nese passwordi edhe ne rregull
+    $_SESSION['ROLE'] = $row['role'];
     if ($row['role'] == 1) {
       header('location: admin.php');
     }

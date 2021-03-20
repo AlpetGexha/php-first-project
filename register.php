@@ -147,6 +147,4 @@ include('server.php');
   <br> <br>
   </div>
   <div class="loader loader-default" data-text="Duke u Regjistriar"></div>
-
-
 </body>
