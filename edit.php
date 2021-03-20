@@ -44,7 +44,7 @@ if (isset($_GET['id'])) {
           </div>
         </div>
         <h6>Teksti</h6>
-        <textarea class="form-control" required="" oninvalid="this.setCustomValidity('Ju lutem shkruani tekstin');" oninput="this.setCustomValidity('');" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 120px" name="body"><?php echo $row['body']; ?></textarea>
+        <textarea class="form-control" required="" oninvalid="this.setCustomValidity('Ju lutem shkruani tekstin');" oninput="this.setCustomValidity('');" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 220px" name="body"><?php echo $row['body']; ?></textarea>
         <button type="submit" class="btn btn-primary" id="submit" style="margin-top: 10px;" value="<?php echo $row['id']; ?>" name="update">Ndrysho</button>
       </div>
     </div>

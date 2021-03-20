@@ -47,7 +47,7 @@ include('items/need_to_login.php');
       display: flex;
       justify-content: center;
       align-items: center;
-      padding: 20px 100px;
+
     }
 
     .container:after {

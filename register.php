@@ -97,36 +97,36 @@ include('server.php');
                 <div class="col-xs-12 col-sm-6 col-md-6">
                   <div class="form-group">
                     <label for="emri" class="text-info">Emri:</label><br>
-                    <input type="text" name="emri" id="emri" class="form-control" required="" oninvalid="this.setCustomValidity('Ju lutem shkruani emrin');" oninput="this.setCustomValidity('');">
+                    <input type="text" name="emri" id="emri" class="form-control" placeholder="Emri" autofocus="" required="" oninvalid="this.setCustomValidity('Ju lutem shkruani emrin');" oninput="this.setCustomValidity('');">
                   </div>
                 </div>
 
                 <div class="col-xs-12 col-sm-6 col-md-6">
                   <div class="form-group">
                     <label for="mbiemri" class="text-info">Mbiemri:</label><br>
-                    <input type="text" name="mbiemri" id="mbiemri" class="form-control" required="" oninvalid="this.setCustomValidity('Ju lutem shkruani mbiemrin');" oninput="this.setCustomValidity('');">
+                    <input type="text" name="mbiemri" id="mbiemri" class="form-control" placeholder="Mbiemri" required="" oninvalid="this.setCustomValidity('Ju lutem shkruani mbiemrin');" oninput="this.setCustomValidity('');">
                   </div>
                 </div>
               </div>
 
               <div class="form-group">
                 <label for="username" class="text-info">Username:</label><br>
-                <input type="text" name="username" id="username" class="form-control" required="" oninvalid="this.setCustomValidity('Ju lutem shkruani usernamin');" oninput="this.setCustomValidity('');">
+                <input type="text" name="username" id="username" class="form-control" placeholder="Username" required="" oninvalid="this.setCustomValidity('Ju lutem shkruani usernamin');" oninput="this.setCustomValidity('');">
               </div>
 
               <div class="form-group">
                 <label for="email" class="text-info">Email:</label><br>
-                <input type="email" name="email" id="email" class="form-control" required="" oninvalid="this.setCustomValidity('Ju lutem shkruani emailin');" oninput="this.setCustomValidity('');">
+                <input type="email" name="email" id="email" class="form-control" placeholder="Email" required="" oninvalid="this.setCustomValidity('Ju lutem shkruani emailin');" oninput="this.setCustomValidity('');">
               </div>
 
               <div class="form-group">
                 <label for="password" class="text-info">Password:</label><br>
-                <input type="password" name="password" id="password" class="form-control" required="" oninvalid="this.setCustomValidity('Ju lutem shkruani passwordin');" oninput="this.setCustomValidity('');">
+                <input type="password" name="password" id="password" class="form-control" placeholder="Password" required="" oninvalid="this.setCustomValidity('Ju lutem shkruani passwordin');" oninput="this.setCustomValidity('');">
               </div>
 
               <div class="form-group">
                 <label for="password" class="text-info">Rishruaj Password:</label><br>
-                <input type="password" name="c_password" id="c_password" class="form-control" required="" oninvalid="this.setCustomValidity('Ju lutem rishkruani passwordin');" oninput="this.setCustomValidity('');">
+                <input type="password" name="c_password" id="c_password" class="form-control" placeholder="Rishruaj passwordin" required="" oninvalid="this.setCustomValidity('Ju lutem rishkruani passwordin');" oninput="this.setCustomValidity('');">
                 <div class="showpassword">
                   <input type="checkbox" class="form-check-input" id="show_password"><label class="text-info">Shiko passwordin</label>
                 </div>

@@ -81,7 +81,7 @@ if (isset($_SESSION['loggedIn']) && $_SESSION['loggedIn'] == true) {
               </div>
               <div class="form-group">
 
-                <input type="submit" id="login_submit" onclick="login_loading()" name="login_submit" class="btn btn-info btn-md" value="submit">
+                <input type="submit" id="login_submit" onclick="login_loading()" name="login_submit" class="btn btn-info btn-md" value="Kyquni">
               </div>
               <div id="register-link" class="text-right">
                 <a href="register.php" class="reg_link">Regjistrohu</a>

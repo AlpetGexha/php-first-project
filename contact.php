@@ -45,7 +45,6 @@ include('items/need_to_login.php');
       display: flex;
       justify-content: center;
       align-items: center;
-      padding: 20px 100px;
     }
 
     .container:after {
@@ -82,14 +81,14 @@ include('items/need_to_login.php');
           }
           ?>
           <h2>Na Kontaktoni</h2>
-          <p style="color: red;">Shkruani mesazhin tuaj, akesat, sugjerime apo &ccedil;far&euml; do q&euml; tjet&euml;r. 100% Anonim </p>
+          <p style="color: red;">Shkruani mesazhin tuaj, akesat, sugjerime apo &ccedil;far&euml; do gj&euml; tjet&euml;r. 100% Anonim </p>
           <!--
         <input type="text" class="inputat" placeholder="Emri" required="" name="emri" >
         <input type="email" class="inputat" placeholder="Email" required="" name="email" >
         <input type="text" class="inputat" placeholder="Numri i telefonit" name="telefoni">
       -->
           <textarea placeholder="Mesazhi..." class="inputat_mesazhi" id="mesazhi" required="" name="mesazhi" rows="10" cols="60" oninvalid="this.setCustomValidity('Ju lutem shkruani mesazhi');" oninput="this.setCustomValidity('');"></textarea>
-          <input id="btn_mesazhi" class="btn_mesazhi" type="submit" name="contact_submit" value="Send">
+          <input id="btn_mesazhi" class="btn_mesazhi" type="submit" name="contact_submit" value="D&euml;rgoni">
         </div>
       </div>
     </div>

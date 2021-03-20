@@ -151,13 +151,6 @@ if (isset($_POST['login_submit'])) {
     $_SESSION['username'] = $username; //Username
     $_SESSION['loggedIn'] = true; //Nese passwordi edhe ne rregull
     $_SESSION['ROLE'] = $row['role'];
-    if ($row['role'] == 1) {
-      header('location: admin.php');
-    }
-    if ($row['role'] == 0
-    ) {
-      header('location: index.php');
-    }
     header('Location:index.php'); //Shko në faqe kryesore
   } else {
     $password_error = "Fjalekalimi &euml;sht&euml; gabim"; //errori per Password
