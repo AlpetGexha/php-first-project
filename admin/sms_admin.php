@@ -13,8 +13,13 @@ if (isset($_SESSION['ROLE']) &&  $_SESSION['ROLE'] != '1') {
 <html>
 
 <head>
+    <?php include('../items/title_bar_img.php'); ?>
+    <title>Konktakit i Userave</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <title>Admin Users</title>
+      <!-- ------------ Meta ------------------ -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta charset="utf-8">
 </head>
 
 <style type="text/css">
