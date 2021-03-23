@@ -73,7 +73,7 @@ $row = $results->fetch_assoc();
                 <div class="profile_img">
                   <?php
                   echo "<a target='_blank' href='assets/profile_image/" . $row['image'] . "'>";
-                  echo "<img src='assets/profile_image/" . $row['image'] . "' alt='Profile Pic'>";
+                  echo "<img src='assets/profile_image/" . $row['image'] . "' alt='Profile Pic'>";//class = 'rounded-circle' 
                   echo "</a>";
                   echo "<br>";
                   ?>

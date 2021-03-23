@@ -17,23 +17,23 @@ if (isset($_GET['id'])) {
 <html>
 
 <title>Ndryshimi i Postimit</title>
-  <!-- ------------ Meta ------------------ -->
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta charset="utf-8">
+<!-- ------------ Meta ------------------ -->
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta charset="utf-8">
 
-  <!-- ------------ Foto per title bar ------------------ -->
-  <link rel="shortcut icon" type="image/x-icon" href="../Final_PHP/img/Killerlogo.jpg">
+<!-- ------------ Foto per title bar ------------------ -->
+<link rel="shortcut icon" type="image/x-icon" href="../Final_PHP/img/Killerlogo.jpg">
 
-  <!-- ------------ Boostrap ------------------ -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+<!-- ------------ Boostrap ------------------ -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
 
 
 <!-- ------------ Foto per title bar ------------------ -->
 <?php include('items/title_bar_img.php'); ?>
 
 <body>
-  
+
   <!-- ------------ Forma për ndryshim e postmit ------------------ -->
   <?php include('items/navbar.php'); ?>
   <form action="server.php" method="POST">
@@ -42,6 +42,11 @@ if (isset($_GET['id'])) {
         <div class="row">
           <div class="col">
             <h6>Titulli</h6>
+            <?php
+            $select = "SELECT * from post where id='$id'";
+            $results = mysqli_query($db, $select);
+            $row = $results->fetch_assoc();
+            ?>
             <input type="text" class="form-control" name="emri_post" autofocus="" required="" value="<?php echo $row['emri_post']; ?>" oninvalid="this.setCustomValidity('Ju lutem shkruani emrin e postmit');" oninput="this.setCustomValidity('');">
           </div>
         </div>

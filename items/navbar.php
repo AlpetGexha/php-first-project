@@ -33,27 +33,44 @@
         <a class="nav-link fas fa-user-alt" href="myprofile.php">Profili</a>
       </li>
 
-      <li class="nav-item">
-        <a class="nav-link fas fa-sign-out-alt" href="logout.php" style=" position:absolute; right: 2%; top:23%; font-size:25px;">Shkyquni</a>
+      <!-- SETTINGAT me foto dhe username   -->
+      <?php
+      $username11 = $_SESSION['username'];
+      $sql11 = "SELECT * from users where username = '$username11'";
+      $sql12 = "SELECT * from post where";
+      
+      $results11 = mysqli_query($db, $sql11);
+      $row = $results11->fetch_assoc();
+      ?>
+      <li class="nav-item dropdown" style=" position:absolute; right: 2%; top:13%; font-size:25px;">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+
+          <?php echo "<img src='assets/profile_image/" . $row['image'] . "' alt='Profile Pic' class='rounded-circle' height='32'  loading='lazy'>"; ?>
+          <?php echo "<p class='fas'> " . $row['username'] . " </p>" ?>
+
+        </a>
+        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+
+          <li>
+            <a class="dropdown-item" href="myprofile.php">Profili im</a>
+          </li>
+
+          <li>
+            <a class="dropdown-item" href="#">Settings</a>
+          </li>
+
+          <li>
+            <hr class="dropdown-divider">
+          </li>
+
+          <li>
+            <a class="dropdown-item" href="logout.php">Logout</a>
+          </li>
+
+        </ul>
       </li>
-        <?php 
-          include "config.php";
-          $username11 = $_SESSION['username'];
-          $sql11 = "SELECT * from users where username = '$username11'";
-          $results11= mysqli_query($db,$sql11);
-          $row = $results11->fetch_assoc();
-        ?>
-         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            <img src="assets/image/AA.jpg"><?php echo "<p> ".$row['username']." </p>" ?></img>
-          </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Logout</a></li>
-          </ul>
-        </li>
+
+
     </ul>
   </div>
 </nav>
