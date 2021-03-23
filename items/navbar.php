@@ -36,7 +36,24 @@
       <li class="nav-item">
         <a class="nav-link fas fa-sign-out-alt" href="logout.php" style=" position:absolute; right: 2%; top:23%; font-size:25px;">Shkyquni</a>
       </li>
-
+        <?php 
+          include "config.php";
+          $username11 = $_SESSION['username'];
+          $sql11 = "SELECT * from users where username = '$username11'";
+          $results11= mysqli_query($db,$sql11);
+          $row = $results11->fetch_assoc();
+        ?>
+         <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <img src="assets/image/AA.jpg"><?php echo "<p> ".$row['username']." </p>" ?></img>
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Logout</a></li>
+          </ul>
+        </li>
     </ul>
   </div>
 </nav>
