@@ -2,7 +2,9 @@
 $msg = "";
 session_start();
 include '../config.php';
-include "../items/need_to_login.php";
+include '../items/need_to_login.php';
+
+//Nese e ke rolin Admin(1) shko në admin control panel
 if (isset($_SESSION['ROLE']) &&  $_SESSION['ROLE'] != '1') {
     header('location: ../index.php');
     die();
@@ -13,6 +15,8 @@ if (isset($_SESSION['ROLE']) &&  $_SESSION['ROLE'] != '1') {
 <html>
 
 <head>
+<?php include '../items/title_bar_img.php'; ?>
+
   <title>Postimet e Userit</title>
 
   <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
@@ -50,27 +54,9 @@ if (isset($_SESSION['ROLE']) &&  $_SESSION['ROLE'] != '1') {
       right: 20px;
     }
 
-    /*
-  -webkit-animation-name: animatetop;
-  -webkit-animation-duration: 0.4s;
-  animation-name: animatetop;
-  animation-duration: 0.4s
-  */
-
-    /* Add Animation 
-@-webkit-keyframes animatetop {
-  from {top:-300px; opacity:0} 
-  to {top:0; opacity:1}
-}
-
-@keyframes animatetop {
-  from {top:-300px; opacity:0}
-  to {top:0; opacity:1}
-}
-
   
   </style>
-<?php include("../items/admin_navbar.php");?>
+<?php include '../items/admin_navbar.php' ;?>
   <div class="container mt-5">
   
     <form class="form-inline" method="get" action="#" style="margin:10px;">
@@ -78,12 +64,12 @@ if (isset($_SESSION['ROLE']) &&  $_SESSION['ROLE'] != '1') {
       <button id="btn_search" class="btn btn-outline-primary" type="submit">Search</button>
     </form>
     <?php
-    //Selektoj të thënat nga user dhe post per te marr user id dhe post id per te krijuar mundesin qe vetem ti mund ti fshish/ndryshosh postimet e tua qe i keni krijuar
-    //from post p = "shkurtesa e post"
+
+    //shfaqj e postimeve
     $select = "SELECT u.emri, u.mbiemri, p.emri_post, u.username, p.body, p.image, p.post_time,  p.id from post p, users u where p.user_id = u.id  order by p.id DESC ";
     $result   = mysqli_query($db, $select);
 
-    //shfaqja e te gjithave postimeve qe i keni bere ju
+    //shfaqja e te gjithave postimeve 
     while (($row = $result->fetch_assoc()) != null) {
 
       echo "<div class='jumbotron'>";
@@ -95,11 +81,10 @@ if (isset($_SESSION['ROLE']) &&  $_SESSION['ROLE'] != '1') {
       echo "</div>";
       echo "<div class='delete'>";
       echo "
-                <td>
-                 <a href='post_delete.php? id=" . $row['id'] . "'class='btn btn-danger'>Fshije</a>
-            </td>
-                    ";
-
+        <td>
+         <button type='button' class='btn btn-danger' data-toggle='modal' data-target='#post2_" . $row['id'] . "'>
+       Fshije
+      </button> </td> ";
       echo "</div>";
       echo " <p class='lead'>" . $row['body'] . "</p>";
       echo "<hr class='my-4'>";
@@ -108,14 +93,36 @@ if (isset($_SESSION['ROLE']) &&  $_SESSION['ROLE'] != '1') {
       echo " <p class='lead'>" . $row['post_time'] . "</p>";
       echo "</div>";
       echo "</div>";
+      echo '
+
+<div class="modal fade" id="post2_' . $row['id'] . '" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Fshije Postimin</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        A jeni i sigurt q&euml; d&euml;shironi ta fshini k&euml;t&euml; postim
+      </div>
+      <div class="modal-footer">
+      <td> <button type="button" class="btn btn-secondary" data-dismiss="modal">JO</button>
+        <a href="post_delete.php? id=' . $row['id'] . ' "class="btn btn-danger"id="delete_btn" >PO! Fshije</a> </td>
+      </div>
+    </div>
+  </div>
+</div>';
       
     }
-
+    //nese nuk ka postime
     if (mysqli_num_rows($result) == 0) {
       echo "<p style='text-align:center; color:red; font-size:20px'> Nuk ka rezultate";
     }
     ?>
 
+    <!-- Loading  -->
     <div class="loader loader-default" data-text="Duke u Fshir"></div>
     <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
     <script src="assets/js/function.js"> </script>

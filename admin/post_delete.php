@@ -1,21 +1,22 @@
 <?php
-include "../config.php";
+include '../config.php';
 
-// if the 'id' variable is set in the URL, we know that we need to edit a record
 if (isset($_GET['id'])) {
     $id = $_GET['id'];
 
-    // write delete query
-    $sql = "DELETE FROM `post` WHERE `id`='$id'";
+    //fshirja e fotos te postimit
+    $sql = "SELECT image from post where id = '$id'";
+    $results= mysqli_query($db,$sql);
+    $row = $results->fetch_assoc();
+    $image = $row['image'];
+    unlink('../assets/post_images/'.$image);
 
-    // Execute the query
-
-    $result = $db->query($sql);
+    //fshitja e postimit
+    $sql1 = "DELETE FROM `post` WHERE `id`='$id'";
+    $result = $db->query($sql1);
 
     if ($result == TRUE) {
-        $msg = "Record deleted successfully.";
         header('Location: post_admin.php');
-    } else {
-        echo "Error:" . $sql . "<br>" . $db->error;
     }
+
 }

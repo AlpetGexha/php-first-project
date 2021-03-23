@@ -70,7 +70,7 @@ include('items/need_to_login.php');
         // ------------ Forma per shfaqejn e postime nga databasa me serch ------------------ 
         if (isset($_GET['search_post'])) {
             $search = $_GET['search_post'];
-            $sql = "SELECT u.emri, u.mbiemri, p.emri_post, p.body , p.image, p.post_time from post p, users u where p.user_id = u.id and emri_post LIKE '%$search%' order by p.id DESC"; // "% $serach %" perafersish fjala qe e shenon per te kerkuar nje postim
+            $sql = "SELECT u.emri, u.mbiemri, p.emri_post, p.body , p.image, p.post_data from post p, users u where p.user_id = u.id and emri_post LIKE '%$search%' order by p.id DESC"; // "% $serach %" perafersish fjala qe e shenon per te kerkuar nje postim
             $result = mysqli_query($db, $sql);
 
 
@@ -88,7 +88,7 @@ include('items/need_to_login.php');
                 echo "<hr class='my-4'>";
                 echo "<p>Postuesi: " . $row['emri'] . " " . $row['mbiemri'] . "</p>";
                 echo "<div class= 'post_time'";
-                echo " <p class='lead'>" . $row['post_time'] . "</p>";
+                echo " <p class='lead'>" . $row['post_data'] . "</p>";
                 echo "</div>";
                 echo "</div>";
             }

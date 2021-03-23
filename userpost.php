@@ -77,7 +77,7 @@ include('items/need_to_login.php');
     //Selektoj të thënat nga user dhe post per te marr user id dhe post id per te krijuar mundesin qe vetem ti mund ti fshish/ndryshosh postimet e tua qe i keni krijuar
     //from post p = "shkurtesa e post"
     $username = $_SESSION['username'];
-    $select = "SELECT u.emri, u.mbiemri, p.emri_post, u.username, p.body, p.image, p.post_time,  p.id from post p, users u where p.user_id = u.id and u.username = '$username' order by p.id DESC ";
+    $select = "SELECT u.emri, u.mbiemri, p.emri_post, u.username, p.body, p.image, p.post_data,  p.id from post p, users u where p.user_id = u.id and u.username = '$username' order by p.id DESC ";
     $result   = mysqli_query($db, $select);
 
     //shfaqja e te gjithave postimeve qe i keni bere ju
@@ -91,18 +91,17 @@ include('items/need_to_login.php');
       echo "</a>";
       echo "</div>";
       echo "<div class='delete'>";
-      echo "<td><a href='edit.php? id=" . $row['id'] . "'class='btn btn-success'>Ndrysho</a>
-
-<button type='button' class='btn btn-danger' data-toggle='modal' data-target='#post1_" . $row['id'] . "'>
- Fshije
-</button></td>"; // Edit/Updates
-
+      echo "
+      <td><a href='edit.php? id=" . $row['id'] . "'class='btn btn-success'>Ndrysho</a>
+      <button type='button' class='btn btn-danger' data-toggle='modal' data-target='#post1_" . $row['id'] . "'>
+       Fshije
+      </button> </td>"; // Edit/Updates
       echo "</div>";
       echo " <p class='lead'>" . $row['body'] . "</p>";
       echo "<hr class='my-4'>";
       echo "<p>Postuesi: " . $row['emri'] . " " . $row['mbiemri'] . "</p>";
       echo "<div class= 'post_time'";
-      echo " <p class='lead'>" . $row['post_time'] . "</p>";
+      echo " <p class='lead'>" . $row['post_data'] . "</p>";
       echo "</div>";
       echo "</div>";
 

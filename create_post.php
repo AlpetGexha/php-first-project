@@ -72,6 +72,7 @@ include('items/need_to_login.php');
     <div class="container mt-5">
       <div class="center_create_post">
         <?php
+        //error
         if (!empty($msg)) {
           echo '<p style="color: red; text-align: center;" > ' . $msg . '</p>';
         }
