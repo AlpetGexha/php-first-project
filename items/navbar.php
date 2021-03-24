@@ -24,13 +24,8 @@
       <li class="nav-item">
         <a class="nav-link fas fa-tools" href="create_post.php">Krijoni Postime</a>
       </li>
-
       <li class="nav-item">
         <a class="nav-link fas fa-user-alt" href="userpost.php">Postimet tua</a>
-      </li>
-
-      <li class="nav-item">
-        <a class="nav-link fas fa-user-alt" href="myprofile.php">Profili</a>
       </li>
 
       <!-- SETTINGAT me foto dhe username   -->
@@ -42,7 +37,7 @@
       $results11 = mysqli_query($db, $sql11);
       $row = $results11->fetch_assoc();
       ?>
-      <li class="nav-item dropdown" style=" position:absolute; right: 2%; top:13%; font-size:25px;">
+      <li class="nav-item dropdown nav_item">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
 
           <?php echo "<img src='assets/profile_image/" . $row['image'] . "' alt='Profile Pic' class='rounded-circle' height='32'  loading='lazy'>"; ?>
@@ -56,7 +51,7 @@
           </li>
 
           <li>
-            <a class="dropdown-item" href="#">Settings</a>
+            <a class="dropdown-item" href="myprofile_edit.php">Settings</a>
           </li>
 
           <li>
@@ -173,6 +168,20 @@
 </nav>
 -->
 <style type="text/css">
+  .nav_item{
+    position:absolute; 
+    right: 2%;
+    top:15%;
+    font-size:25px;
+  }
+
+  @media screen and (max-width: 780px) {
+  .nav_item {
+    position: initial;
+
+  }
+
+}
   body {
     background: #092756;
     background: -moz-radial-gradient(0% 100%, ellipse cover, rgba(104, 128, 138, .4) 10%, rgba(138, 114, 76, 0) 40%), -moz-linear-gradient(top, rgba(57, 173, 219, .25) 0%, rgba(42, 60, 87, .4) 100%), -moz-linear-gradient(-45deg, #670d10 0%, #092756 100%);
