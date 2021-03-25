@@ -54,6 +54,17 @@
             <a class="dropdown-item" href="myprofile_edit.php">Settings</a>
           </li>
 
+          <?php 
+                if (isset($_SESSION['ROLE']) &&  $_SESSION['ROLE'] != '0') {
+                  echo  '
+              
+                <li class="nav-item">
+                <a class="dropdown-item" href="admin/index.php">Admin Control Panel</a>
+              </li>
+                  ';
+                }
+          ?>
+
           <li>
             <hr class="dropdown-divider">
           </li>

@@ -95,19 +95,7 @@ $row = $results->fetch_assoc();
                 <input type="email" name="email" id="email" class="form-control" value="<?php echo $row['email']; ?>" readonly>
               </div>
               <a href="myprofile_edit.php">Ndrysho profilin</a><br>
-              
-              <?php 
-                if (isset($_SESSION['ROLE']) &&  $_SESSION['ROLE'] != '0') {
-                  echo  '
-                  <div class="admin_CP_btn">
-                <button class="btn btn-danger" id="CP_admin_btn"><a class="CPA_a" href="admin/index.php">Admin Control Panel</a></button>
-              </div> <br>
-                  ';
-                } else{
-
-                echo " ";
-              }
-              ?>
+  
 
           </div>
           </form>
