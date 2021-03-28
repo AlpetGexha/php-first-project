@@ -32,70 +32,13 @@ include('items/need_to_login.php');
 	<?php include('items/navbar.php'); ?>
 
 	<div class="container mt-5">
-		<style>
-.flip-card {
-  background-color: transparent;
-  width: 300px;
-  height: 300px;
-  perspective: 1000px;
-  margin: auto;
-}
-
-.flip-card-inner {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  transition: transform 0.6s;
-  transform-style: preserve-3d;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-}
-
-.flip-card:hover .flip-card-inner {
-  transform: rotateY(180deg);
-}
-
-.flip-card-front, .flip-card-back {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-}
-
-.flip-card-front {
-  background-color: #bbb;
-  color: black;
-}
-
-.flip-card-back {
-  background-color: #2980b9;
-  color: white;
-  transform: rotateY(180deg);
-}
-.ez {
-	max-width: 340px;
-	max-height: 380px;
-	padding: 10px;
-	display: flex;
-	justify-content: center;
-	flex-wrap: wrap;
-	flex-direction: row;
-}
-.flip-card-title{
-	text-align: center;
-	font-size: 30px;
-	font-weight: bold;
-}
-</style>
 </head>
 <body>
 
 	<div class="container mt-5">
   <div class="row">
-
     <div class="col order-last">
-      <div class="ez">
+      <div class="flip-size">
 	<div class="flip-card-title">
 		Titulli i lojes
 	</div>
@@ -108,14 +51,35 @@ include('items/need_to_login.php');
       <h1>Emri i lojes</h1> 
       <p></p> 
       <p>pershkrimi</p>
+      <a href="#"><button class="btn btn-danger">Luaj Tani</button></a>
     </div>
   </div>
 </div>
 </div>
     </div>
-
+<!-- 
     <div class="col">
-      <div class="ez">
+      <div class="flip-size">
+	<div class="flip-card-title">
+		Titulli i lojes
+	</div>
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="assets/image/AA.jpg" alt="Avatar" style="width:300px;height:300px;">
+    </div>
+    <div class="flip-card-back">
+      <h1>Emri i lojes</h1> 
+      <p></p> 
+      <p>pershkrimi</p>
+    </div>
+  </div>
+</div>
+</div>
+    </div> -->
+
+<!--     <div class="col order-first">
+      <div class="flip-size">
 	<div class="flip-card-title">
 		Titulli i lojes
 	</div>
@@ -133,9 +97,11 @@ include('items/need_to_login.php');
 </div>
 </div>
     </div>
+ -->
 
-    <div class="col order-first">
-      <div class="ez">
+<!-- 
+    <div class="col order-last">
+      <div class="flip-size">
 	<div class="flip-card-title">
 		Titulli i lojes
 	</div>
@@ -153,10 +119,52 @@ include('items/need_to_login.php');
 </div>
 </div>
     </div>
-
+ -->
+<!--     <div class="col">
+      <div class="flip-size">
+	<div class="flip-card-title">
+		Titulli i lojes
+	</div>
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="assets/image/AA.jpg" alt="Avatar" style="width:300px;height:300px;">
+    </div>
+    <div class="flip-card-back">
+      <h1>Emri i lojes</h1> 
+      <p></p> 
+      <p>pershkrimi</p>
+    </div>
   </div>
 </div>
+</div>
+    </div> -->
 
+<!--     <div class="col order-first">
+      <div class="flip-size">
+	<div class="flip-card-title">
+		Titulli i lojes
+	</div>
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="assets/image/AA.jpg" alt="Avatar" style="width:300px;height:300px;">
+    </div>
+    <div class="flip-card-back">
+      <h1>Emri i lojes</h1> 
+      <p></p> 
+      <p>pershkrimi</p>
+    </div>
+  </div>
+</div>
+</div>
+    </div> -->
+
+   
+  </div>
+  </div>
+</div>
+<br><br><br>
 
 </body>
 </html>
