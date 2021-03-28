@@ -1,4 +1,4 @@
-<?php
+ <?php
 $msg = "";
 session_start();
 include '../config.php';

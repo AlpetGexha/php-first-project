@@ -25,7 +25,7 @@
         <a class="nav-link fas fa-tools" href="create_post.php">Krijoni Postime</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link fas fa-user-alt" href="userpost.php">Postimet tua</a>
+        <a class="nav-link fas fa-gamepad" href="lojëra.php">Loj&euml;ra</a>
       </li>
 
       <!-- SETTINGAT me foto dhe username   -->
@@ -47,11 +47,15 @@
         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
 
           <li>
-            <a class="dropdown-item" href="myprofile.php">Profili im</a>
+            <a class="dropdown-item fas fa-user-alt" href="myprofile.php">Profili im</a>
           </li>
 
           <li>
-            <a class="dropdown-item" href="myprofile_edit.php">Settings</a>
+           <a class="dropdown-item fas fa-user-alt" href="userpost.php">Postimet tua</a>
+          </li>
+
+          <li>
+            <a class="dropdown-item fas fa-cog" href="myprofile_edit.php">Settings</a>
           </li>
 
           <?php 
@@ -59,7 +63,7 @@
                   echo  '
               
                 <li class="nav-item">
-                <a class="dropdown-item" href="admin/index.php">Admin Control Panel</a>
+                <a class="dropdown-item fas fa-toolbox" href="admin/index.php">Admin Control Panel</a>
               </li>
                   ';
                 }
@@ -70,7 +74,7 @@
           </li>
 
           <li>
-            <a class="dropdown-item" href="logout.php">Logout</a>
+            <a class="dropdown-item fas fa-sign-out-alt" href="logout.php">Shkyquni</a>
           </li>
 
         </ul>
