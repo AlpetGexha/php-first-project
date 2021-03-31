@@ -9,6 +9,7 @@
     <meta charset="utf-8">
 <body>
 <h4 class="title">preke figur&euml;n p&euml;r 0.5s p&euml;r t&euml; fituar</h4>
+<p class="link"><a class="link" href="../lojëra.php">Kthehu tek loj&euml;rat</a></p>
     <div class="hapesira-potenciale"></div>
     <div id="circle" class="circle"></div>
     <div id="time" class="time"></div>
@@ -42,6 +43,10 @@
 }
 .title{
 	text-align: center;
+}
+.link{
+	text-align: center;
+	text-decoration: none;
 }
 </style>
 

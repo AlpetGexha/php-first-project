@@ -67,12 +67,12 @@ include('items/need_to_login.php');
 <div class="flip-card">
   <div class="flip-card-inner">
     <div class="flip-card-front">
-      <img src="assets/image/gur-leter.png" alt="Avatar" style="width:300px;height:300px;">
+      <img src="assets/image/tauch.png" alt="Avatar" style="width:300px;height:300px;">
     </div>
     <div class="flip-card-back">
-      <h1>Gur-let&euml;r-g&euml;sh&euml;r</h1> 
+      <h1>Preke dhe fito</h1> 
       <p></p> 
-      <p>pershkrimi</p>
+      <p>Duheni t&euml; prekni figuten brenda 0.5s dhe do te fitoni</p>
       <a href="loja/tauch-to-win.php"><button class="btn btn-danger">Luaj Tani</button></a>
     </div>
   </div>

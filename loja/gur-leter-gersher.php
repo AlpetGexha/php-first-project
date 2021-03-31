@@ -32,6 +32,7 @@ include('../items/need_to_login.php');
             <div class="scores" id="score_computer">0</div>
             <div class="scores" id="score_you">0</div>
         </div>
+        <p class="link"><a class="link" href="../lojëra.php">Kthehu tek loj&euml;rat</a></p>
         <div class="buttons" id="b_scissor"></div>
         <div class="buttons" id="b_paper"></div>
         <div class="buttons" id="b_rock"></div>

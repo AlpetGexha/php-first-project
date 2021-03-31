@@ -192,3 +192,10 @@ button:hover {
     background-image: url(https://i.imgur.com/Bp97CXQ.png);
     display: none;
 }
+.title{
+    text-align: center;
+}
+.link{
+    text-align: center;
+    text-decoration: none;
+}
