@@ -28,13 +28,13 @@
       <li class="nav-item">
         <a class="nav-link fas fa-sign-out-alt" href="../logout.php" style=" position:absolute; right: 2%; top:23%; font-size:25px;">Shkyquni</a>
       </li>
-
+S
     </ul>
   </div>
 </nav>
 
 <style type="text/css">
-body{
- background: #222D32;
- } 
+  body {
+    background: #222D32;
+  }
 </style>
