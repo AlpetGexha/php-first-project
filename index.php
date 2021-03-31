@@ -65,7 +65,6 @@ include('items/need_to_login.php');
         </form>
 
 
-
         <?php
         // ------------ Forma per shfaqejn e postime nga databasa me serch ------------------ 
         if (isset($_GET['search_post'])) {

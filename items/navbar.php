@@ -93,6 +93,11 @@
     font-size:25px;
   }
 
+  .dropdown-item{
+    padding: 10px;
+    font-size: 15px;  
+  }
+
   @media screen and (max-width: 780px) {
   .nav_item {
     position: initial;

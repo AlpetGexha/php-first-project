@@ -37,18 +37,18 @@ include('items/need_to_login.php');
 
 	<div class="container mt-5">
   <div class="row">
-    <div class="col order-last">
+    <div class="col">
       <div class="flip-size">
 	<div class="flip-card-title">
-		Titulli i lojes
+		Gur-let&euml;r-g&euml;sh&euml;r
 	</div>
 <div class="flip-card">
   <div class="flip-card-inner">
     <div class="flip-card-front">
-      <img src="assets/image/AA.jpg" alt="Avatar" style="width:300px;height:300px;">
+      <img src="assets/image/gur-leter.png" alt="Avatar" style="width:300px;height:300px;">
     </div>
     <div class="flip-card-back">
-      <h1>Emri i lojes</h1> 
+      <h1>Gur-let&euml;r-g&euml;sh&euml;r</h1> 
       <p></p> 
       <p>pershkrimi</p>
       <a href="loja/gur-leter-gersher.php"><button class="btn btn-danger">Luaj Tani</button></a>
@@ -57,108 +57,48 @@ include('items/need_to_login.php');
 </div>
 </div>
     </div>
-<!-- 
-    <div class="col">
-      <div class="flip-size">
-	<div class="flip-card-title">
-		Titulli i lojes
-	</div>
-<div class="flip-card">
-  <div class="flip-card-inner">
-    <div class="flip-card-front">
-      <img src="assets/image/AA.jpg" alt="Avatar" style="width:300px;height:300px;">
-    </div>
-    <div class="flip-card-back">
-      <h1>Emri i lojes</h1> 
-      <p></p> 
-      <p>pershkrimi</p>
-    </div>
-  </div>
-</div>
-</div>
-    </div> -->
 
-<!--     <div class="col order-first">
+ 
+    <div class="col ">
       <div class="flip-size">
 	<div class="flip-card-title">
-		Titulli i lojes
+		Tauch to Win
 	</div>
 <div class="flip-card">
   <div class="flip-card-inner">
     <div class="flip-card-front">
-      <img src="assets/image/AA.jpg" alt="Avatar" style="width:300px;height:300px;">
+      <img src="assets/image/gur-leter.png" alt="Avatar" style="width:300px;height:300px;">
     </div>
     <div class="flip-card-back">
-      <h1>Emri i lojes</h1> 
+      <h1>Gur-let&euml;r-g&euml;sh&euml;r</h1> 
       <p></p> 
       <p>pershkrimi</p>
+      <a href="loja/tauch-to-win.php"><button class="btn btn-danger">Luaj Tani</button></a>
     </div>
   </div>
 </div>
-</div>
+ </div>
     </div>
- -->
 
-<!-- 
-    <div class="col order-last">
+    <div class="col ">
       <div class="flip-size">
 	<div class="flip-card-title">
-		Titulli i lojes
+		?????
 	</div>
 <div class="flip-card">
   <div class="flip-card-inner">
     <div class="flip-card-front">
-      <img src="assets/image/AA.jpg" alt="Avatar" style="width:300px;height:300px;">
+      <img src="assets/image/gur-leter.png" alt="Avatar" style="width:300px;height:300px;">
     </div>
     <div class="flip-card-back">
-      <h1>Emri i lojes</h1> 
+      <h1>Gur-let&euml;r-g&euml;sh&euml;r</h1> 
       <p></p> 
       <p>pershkrimi</p>
+      <a href="#"><button class="btn btn-danger">Luaj Tani</button></a>
     </div>
   </div>
 </div>
-</div>
-    </div>
- -->
-<!--     <div class="col">
-      <div class="flip-size">
-	<div class="flip-card-title">
-		Titulli i lojes
-	</div>
-<div class="flip-card">
-  <div class="flip-card-inner">
-    <div class="flip-card-front">
-      <img src="assets/image/AA.jpg" alt="Avatar" style="width:300px;height:300px;">
-    </div>
-    <div class="flip-card-back">
-      <h1>Emri i lojes</h1> 
-      <p></p> 
-      <p>pershkrimi</p>
-    </div>
-  </div>
-</div>
-</div>
-    </div> -->
 
-<!--     <div class="col order-first">
-      <div class="flip-size">
-	<div class="flip-card-title">
-		Titulli i lojes
-	</div>
-<div class="flip-card">
-  <div class="flip-card-inner">
-    <div class="flip-card-front">
-      <img src="assets/image/AA.jpg" alt="Avatar" style="width:300px;height:300px;">
-    </div>
-    <div class="flip-card-back">
-      <h1>Emri i lojes</h1> 
-      <p></p> 
-      <p>pershkrimi</p>
-    </div>
-  </div>
-</div>
-</div>
-    </div> -->
 
    
   </div>
