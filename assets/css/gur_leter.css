@@ -1,203 +1,199 @@
  body {
-     font-family: 'Roboto Mono', monospace;
-     font-size: 21px;
-     margin: 0 0 0 0;
-     background-color: #ffffff;
-     background-image: url(https://i.imgur.com/25PFnQi.jpg);
- }
+    font-family: 'Roboto Mono', monospace;
+    font-size: 21px;
+    margin: 0 0 0 0;
+    background-color: #ffffff;
+    background-image: url(https://i.imgur.com/25PFnQi.jpg);
+}
 
- button {
-     font-size: 17px;
-     font-family: arial, helvetica;
-     font-weight: bold;
-     padding: 7px 15px 7px 15px;
-     margin: 10px 0 0 0;
-     border: 2px solid #202020;
-     background-color: #ffffff;
-     color: #202020;
-     cursor: pointer;
- }
+button {
+    font-size: 17px;
+    font-family: arial, helvetica;
+    font-weight: bold;
+    padding: 7px 15px 7px 15px;
+    margin: 10px 0 0 0;
+    border: 2px solid #202020;
+    background-color: #ffffff;
+    color: #202020;
+    cursor: pointer;
+}
 
- button:hover {
-     background-color: #202020;
-     border: 2px solid #202020;
-     color: #ffffff;
- }
+button:hover {
+    background-color: #202020;
+    border: 2px solid #202020;
+    color: #ffffff;
+}
 
- #main {
-     position: relative;
-     margin: auto;
-     width: 360px;
-     height: 440px;
-     overflow: hidden;
- }
+#main {
+    position: relative;
+    margin: auto;
+    width: 360px;
+    height: 440px;
+    overflow: hidden;
+}
 
- #header {
-     position: relative;
-     margin: auto;
-     width: 350px;
-     height: 70px;
-     background-image: url(https://i.imgur.com/jDXgErG.png);
- }
+#header {
+    position: relative;
+    margin: auto;
+    width: 350px;
+    height: 70px;
+    background-image: url(https://i.imgur.com/jDXgErG.png);
+}
 
- .buttons {
-     position: absolute;
-     bottom: 10px;
-     width: 75px;
-     height: 75px;
-     border: 2px solid #000000;
-     cursor: pointer;
-     -webkit-border-radius: 38px;
-     -moz-border-radius: 38px;
-     border-radius: 38px;
-     background-image: url(https://i.imgur.com/cFwdFze.png);
- }
+.buttons {
+    position: absolute;
+    bottom: 10px;
+    width: 75px;
+    height: 75px;
+    border: 2px solid #000000;
+    cursor: pointer;
+    -webkit-border-radius: 38px;
+    -moz-border-radius: 38px;
+    border-radius: 38px;
+    background-image: url(https://i.imgur.com/cFwdFze.png);
+}
 
- .buttons#b_rock {
-     right: 180px;
-     background-position: 0 0;
- }
+.buttons#b_rock {
+    right: 180px;
+    background-position: 0 0;
+}
 
- .buttons#b_paper {
-     right: 95px;
-     background-position: -75px 0;
- }
+.buttons#b_paper {
+    right: 95px;
+    background-position: -75px 0;
+}
 
- .buttons#b_scissor {
-     right: 10px;
-     background-position: -150px 0;
- }
+.buttons#b_scissor {
+    right: 10px;
+    background-position: -150px 0;
+}
 
- #playagain {
-     position: absolute;
-     bottom: 10px;
-     right: 10px;
-     width: 245px;
-     height: 75px;
-     border: 2px solid #000000;
-     cursor: pointer;
-     -webkit-border-radius: 38px;
-     -moz-border-radius: 38px;
-     border-radius: 38px;
-     background-image: url(https://i.imgur.com/cFwdFze.png);
-     background-position: 0 -75px;
-     display: none;
- }
+#playagain {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    width: 245px;
+    height: 75px;
+    border: 2px solid #000000;
+    cursor: pointer;
+    -webkit-border-radius: 38px;
+    -moz-border-radius: 38px;
+    border-radius: 38px;
+    background-image: url(https://i.imgur.com/cFwdFze.png);
+    background-position: 0 -75px;
+    display: none;
+}
 
- .scores {
-     position: absolute;
-     top: 34px;
-     width: 53px;
-     height: 28px;
-     text-align: center;
- }
+.scores {
+    position: absolute;
+    top: 34px;
+    width: 53px;
+    height: 28px;
+    text-align: center;
+}
 
- .scores#score_computer {
-     left: 153px;
- }
+.scores#score_computer {
+    left: 153px;
+}
 
- .scores#score_you {
-     left: 280px;
- }
+.scores#score_you {
+    left: 280px;
+}
 
- .options {
-     position: absolute;
-     top: 50%;
-     left: 50%;
-     width: 165px;
-     height: 165px;
-     background-image: url(https://i.imgur.com/zUXYeIU.png);
- }
+.options {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 165px;
+    height: 165px;
+    background-image: url(https://i.imgur.com/zUXYeIU.png);
+}
 
- @keyframes you_rotating {
-     0% {
-         -ms-transform: rotate(0deg);
-         -moz-transform: rotate(0deg);
-         -webkit-transform: rotate(0deg);
-         -o-transform: rotate(0deg);
-         transform: rotate(0deg);
-     }
+@keyframes you_rotating {
+    0% {
+        -ms-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
 
-     100% {
-         -ms-transform: rotate(30deg);
-         -moz-transform: rotate(30deg);
-         -webkit-transform: rotate(30deg);
-         -o-transform: rotate(30deg);
-         transform: rotate(30deg);
-     }
- }
+    100% {
+        -ms-transform: rotate(30deg);
+        -moz-transform: rotate(30deg);
+        -webkit-transform: rotate(30deg);
+        -o-transform: rotate(30deg);
+        transform: rotate(30deg);
+    }
+}
 
- @keyframes computer_rotating {
-     0% {
-         -ms-transform: rotate(0deg);
-         -moz-transform: rotate(0deg);
-         -webkit-transform: rotate(0deg);
-         -o-transform: rotate(0deg);
-         transform: rotate(0deg);
-     }
+@keyframes computer_rotating {
+    0% {
+        -ms-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
 
-     100% {
-         -ms-transform: rotate(-30deg);
-         -moz-transform: rotate(-30deg);
-         -webkit-transform: rotate(-30deg);
-         -o-transform: rotate(-30deg);
-         transform: rotate(-30deg);
-     }
- }
+    100% {
+        -ms-transform: rotate(-30deg);
+        -moz-transform: rotate(-30deg);
+        -webkit-transform: rotate(-30deg);
+        -o-transform: rotate(-30deg);
+        transform: rotate(-30deg);
+    }
+}
 
- .options#o_you {
-     background-position: 0 0;
-     -webkit-transform-origin: right top;
-     -moz-transform-origin: right top;
-     -ms-transform-origin: right top;
-     -o-transform-origin: right top;
-     transform-origin: right top;
-     -webkit-animation: you_rotating .2s linear infinite;
-     -moz-animation: you_rotating .2s linear infinite;
-     -ms-animation: you_rotating .2s linear infinite;
-     -o-animation: you_rotating .2s linear infinite;
-     animation: you_rotating .2s linear infinite;
-     -webkit-animation-direction: alternate;
-     -moz-animation-direction: alternate;
-     -ms-animation-direction: alternate;
-     -o-animation-direction: alternate;
-     animation-direction: alternate;
- }
+.options#o_you {
+    background-position: 0 0;
+    -webkit-transform-origin: right top;
+    -moz-transform-origin: right top;
+    -ms-transform-origin: right top;
+    -o-transform-origin: right top;
+    transform-origin: right top;
+    -webkit-animation: you_rotating .2s linear infinite;
+    -moz-animation: you_rotating .2s linear infinite;
+    -ms-animation: you_rotating .2s linear infinite;
+    -o-animation: you_rotating .2s linear infinite;
+    animation: you_rotating .2s linear infinite;
+    -webkit-animation-direction: alternate;
+    -moz-animation-direction: alternate;
+    -ms-animation-direction: alternate;
+    -o-animation-direction: alternate;
+    animation-direction: alternate;
+}
 
- .options#o_computer {
-     background-position: 0 -165px;
-     -webkit-transform-origin: left top;
-     -moz-transform-origin: left top;
-     -ms-transform-origin: left top;
-     -o-transform-origin: left top;
-     transform-origin: left top;
-     -webkit-animation: computer_rotating .2s linear infinite;
-     -moz-animation: computer_rotating .2s linear infinite;
-     -ms-animation: computer_rotating .2s linear infinite;
-     -o-animation: computer_rotating .2s linear infinite;
-     animation: computer_rotating .2s linear infinite;
-     -webkit-animation-direction: alternate;
-     -moz-animation-direction: alternate;
-     -ms-animation-direction: alternate;
-     -o-animation-direction: alternate;
-     animation-direction: alternate;
- }
+.options#o_computer {
+    background-position: 0 -165px;
+    -webkit-transform-origin: left top;
+    -moz-transform-origin: left top;
+    -ms-transform-origin: left top;
+    -o-transform-origin: left top;
+    transform-origin: left top;
+    -webkit-animation: computer_rotating .2s linear infinite;
+    -moz-animation: computer_rotating .2s linear infinite;
+    -ms-animation: computer_rotating .2s linear infinite;
+    -o-animation: computer_rotating .2s linear infinite;
+    animation: computer_rotating .2s linear infinite;
+    -webkit-animation-direction: alternate;
+    -moz-animation-direction: alternate;
+    -ms-animation-direction: alternate;
+    -o-animation-direction: alternate;
+    animation-direction: alternate;
+}
 
- #result {
-     position: absolute;
-     top: 0;
-     left: 0;
-     width: 220px;
-     height: 29px;
-     background-image: url(https://i.imgur.com/Bp97CXQ.png);
-     display: none;
- }
+#result {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 220px;
+    height: 29px;
+    background-image: url(https://i.imgur.com/Bp97CXQ.png);
+    display: none;
+}
 
- .title {
-     text-align: center;
- }
-
- .link {
-     text-align: center;
-     text-decoration: none;
- }
+    .link {
+        text-align: center;
+        text-decoration: none;
+    }

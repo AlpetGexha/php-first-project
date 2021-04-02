@@ -15,7 +15,7 @@
     <div id="circle" class="circle"></div>
     <div id="time" class="time"></div>
 
-    <Script src="../assets/js/function.js"></Script>
+    <Script src="../assets/js/tauchtowin.js"></Script>
 </body>
 
 <style type="text/css">

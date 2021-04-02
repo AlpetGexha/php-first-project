@@ -6,7 +6,7 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
 <nav class="navbar navbar-expand-md bg-dark navbar-dark">
-  <img class="navbar-brand" src="assets/image/Killerlogo.jpg" alt="logo" style="width:50px;">
+  <img class="navbar-brand" src="../assets/image/Killerlogo.jpg" alt="logo" style="width:50px;">
   </div>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
     <span class="navbar-toggler-icon"></span>
@@ -14,18 +14,18 @@
   <div class="collapse navbar-collapse" id="collapsibleNavbar">
     <ul class="navbar-nav ">
       <li class="nav-item">
-        <a class="nav-link fas fa-home" href="index.php">Home</a>
+        <a class="nav-link fas fa-home" href="../index.php">Home</a>
       </li>
 
       <li class="nav-item">
-        <a class="nav-link fas fa-id-card-alt" href="contact.php">Kontaktonani</a>
+        <a class="nav-link fas fa-id-card-alt" href="../contact.php">Kontaktonani</a>
       </li>
 
       <li class="nav-item">
-        <a class="nav-link fas fa-tools" href="create_post.php">Krijoni Postime</a>
+        <a class="nav-link fas fa-tools" href="../create_post.php">Krijoni Postime</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link fas fa-gamepad" href="lojëra.php">Loj&euml;ra</a>
+        <a class="nav-link fas fa-gamepad" href="../lojëra.php">Loj&euml;ra</a>
       </li>
 
       <!-- SETTINGAT me foto dhe username   -->
@@ -33,40 +33,40 @@
       $username11 = $_SESSION['username'];
       $sql11 = "SELECT * from users where username = '$username11'";
       $sql12 = "SELECT * from post where";
-
+      
       $results11 = mysqli_query($db, $sql11);
       $row = $results11->fetch_assoc();
       ?>
       <li class="nav-item dropdown nav_item">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
 
-          <?php echo "<img src='assets/profile_image/" . $row['image'] . "' alt='Profile Pic' class='rounded-circle' height='32'  loading='lazy'>"; ?>
+          <?php echo "<img src='../assets/profile_image/" . $row['image'] . "' alt='Profile Pic' class='rounded-circle' height='32'  loading='lazy'>"; ?>
           <?php echo "<p class='fas'> " . $row['username'] . " </p>" ?>
 
         </a>
         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
 
           <li>
-            <a class="dropdown-item fas fa-user-alt" href="myprofile.php">Profili im</a>
+            <a class="dropdown-item fas fa-user-alt" href="../myprofile.php">Profili im</a>
           </li>
 
           <li>
-            <a class="dropdown-item fas fa-user-alt" href="userpost.php">Postimet tua</a>
+           <a class="dropdown-item fas fa-user-alt" href="../userpost.php">Postimet tua</a>
           </li>
 
           <li>
-            <a class="dropdown-item fas fa-cog" href="myprofile_edit.php">Settings</a>
+            <a class="dropdown-item fas fa-cog" href="../myprofile_edit.php">Settings</a>
           </li>
 
-          <?php
-          if (isset($_SESSION['ROLE']) &&  $_SESSION['ROLE'] != '0') {
-            echo  '
+          <?php 
+                if (isset($_SESSION['ROLE']) &&  $_SESSION['ROLE'] != '0') {
+                  echo  '
               
                 <li class="nav-item">
-                <a class="dropdown-item fas fa-toolbox" href="admin/index.php">Admin Control Panel</a>
+                <a class="dropdown-item fas fa-toolbox" href="../admin/index.php">Admin Control Panel</a>
               </li>
                   ';
-          }
+                }
           ?>
 
           <li>
@@ -74,7 +74,7 @@
           </li>
 
           <li>
-            <a class="dropdown-item fas fa-sign-out-alt" href="logout.php">Shkyquni</a>
+            <a class="dropdown-item fas fa-sign-out-alt" href="../logout.php">Shkyquni</a>
           </li>
 
         </ul>
@@ -86,26 +86,20 @@
 </nav>
 
 <style type="text/css">
-  .nav_item {
-    position: absolute;
+  .nav_item{
+    position:absolute; 
     right: 2%;
-    top: 15%;
-    font-size: 25px;
-  }
-
-  .dropdown-item {
-    padding: 10px;
-    font-size: 19px;
+    top:15%;
+    font-size:25px;
   }
 
   @media screen and (max-width: 780px) {
-    .nav_item {
-      position: initial;
-
-    }
+  .nav_item {
+    position: initial;
 
   }
 
+}
   body {
     background: #092756;
     background: -moz-radial-gradient(0% 100%, ellipse cover, rgba(104, 128, 138, .4) 10%, rgba(138, 114, 76, 0) 40%), -moz-linear-gradient(top, rgba(57, 173, 219, .25) 0%, rgba(42, 60, 87, .4) 100%), -moz-linear-gradient(-45deg, #670d10 0%, #092756 100%);
