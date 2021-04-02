@@ -47,7 +47,7 @@ include('items/need_to_login.php');
             <div class="flip-card">
               <div class="flip-card-inner">
                 <div class="flip-card-front">
-                  <img src="assets/image/gur-leter.png" alt="Avatar" style="width:300px;height:300px;">
+                  <img src="assets/image/gur-leter.png" alt="Foto" style="width:300px;height:300px;">
                 </div>
                 <div class="flip-card-back">
                   <h1>Gur-let&euml;r-g&euml;sh&euml;r</h1>
@@ -60,7 +60,6 @@ include('items/need_to_login.php');
           </div>
         </div>
 
-
         <div class="col ">
           <div class="flip-size">
             <div class="flip-card-title">
@@ -69,7 +68,7 @@ include('items/need_to_login.php');
             <div class="flip-card">
               <div class="flip-card-inner">
                 <div class="flip-card-front">
-                  <img src="assets/image/tauch.png" alt="Avatar" style="width:300px;height:300px;">
+                  <img src="assets/image/tauch.png" alt="Foto" style="width:300px;height:300px;">
                 </div>
                 <div class="flip-card-back">
                   <h1>Preke dhe fito</h1>
@@ -90,7 +89,7 @@ include('items/need_to_login.php');
             <div class="flip-card">
               <div class="flip-card-inner">
                 <div class="flip-card-front">
-                  <img src="assets/image/tic-tac-toe.png" alt="Avatar" style="width:300px;height:300px;">
+                  <img src="assets/image/tic-tac-toe.png" alt="Foto" style="width:300px;height:300px;">
                 </div>
                 <div class="flip-card-back">
                   <h1>Tic-Tac-Toe</h1>
@@ -102,7 +101,30 @@ include('items/need_to_login.php');
             </div>
           </div>
         </div>
+
+      
+        <div class="col ">
+          <div class="flip-size">
+            <div class="flip-card-title">
+              Shpejtesi e klikimit
+            </div>
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <img src="assets/image/click-count.PNG" alt="Foto" style="width:300px;height:300px;">
+                </div>
+                <div class="flip-card-back">
+                  <h1>Shpejtesi e klikimit</h1>
+                  <p></p>
+                  <p>pershkrimi</p>
+                  <a href="loja/count-click.php"><button class="btn btn-danger">Luaj Tani</button></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
     
+
       </div>
       <br><br><br>
     </div>

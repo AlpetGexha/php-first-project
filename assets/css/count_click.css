@@ -1,0 +1,94 @@
+* {
+
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+#resTable {
+	display: grid;
+	grid-template-columns: 43px 70px 70px;
+	grid-template-rows: 28px repeat(5, 35px);
+	position: fixed;
+	font-size: 25px;
+	text-align: center;
+	border: 2px solid black;
+}
+
+#h1,
+#h2,
+#h3 {
+	border: 1px solid gray;
+	font-size: 18px;
+	text-align: center;
+}
+
+
+
+#button {
+	text-align: center;
+	height: 80px;
+	width: 300px;
+	background-color: lightblue;
+	font-size: 50px;
+	color: white;
+	border: dashed gray 1px;
+	transition: 0.1s;
+	text-shadow: 1px 1px 1px black, 0 0 3px black;
+}
+
+
+
+#count {
+	height: 40px;
+	width: 50px;
+	border: 2px solid;
+	text-align: center;
+	font-size: 26px;
+}
+
+
+#tm {
+	height: 27px;
+	width: 25px;
+	border: 1px gray solid;
+	font-size: 17px;
+	text-align: center;
+}
+
+
+#record {
+	top: 10px;
+	left: 10px;
+	height: 20px;
+	width: 300px;
+	color: gray;
+	font-size: 17px;
+}
+
+#persec {
+
+	border: 2px solid black;
+	height: 30px;
+	width: 120px;
+	text-align: center;
+
+}
+
+.secont_count {
+	border: solid 1px red;
+}
+
+.rows {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.col1,
+.col2,
+.col3 {
+	margin-right: 4px;
+}
+
