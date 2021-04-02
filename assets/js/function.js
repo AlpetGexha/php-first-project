@@ -74,29 +74,29 @@
  }
 
 */
-//password
-      $(document).ready(function(){
-        $('#show_password').on('change',function(){
-          var isChecked = $(this).prop('checked');
-          if (isChecked) {
-            $('#password').attr('type','text');
-          } else {
-            $('#password').attr('type','Password');
-          }
-        });
-      });
+ //password
+ $(document).ready(function () {
+     $('#show_password').on('change', function () {
+         var isChecked = $(this).prop('checked');
+         if (isChecked) {
+             $('#password').attr('type', 'text');
+         } else {
+             $('#password').attr('type', 'Password');
+         }
+     });
+ });
 
-//Continiu password 
-$(document).ready(function(){
-        $('#show_password').on('change',function(){
-          var isChecked = $(this).prop('checked');
-          if (isChecked) {
-            $('#c_password').attr('type','text');
-          } else {
-            $('#c_password').attr('type','Password');
-          }
-        });
-      });
+ //Continiu password 
+ $(document).ready(function () {
+     $('#show_password').on('change', function () {
+         var isChecked = $(this).prop('checked');
+         if (isChecked) {
+             $('#c_password').attr('type', 'text');
+         } else {
+             $('#c_password').attr('type', 'Password');
+         }
+     });
+ });
 
  // Loading Page
  $(document).ready(function () {

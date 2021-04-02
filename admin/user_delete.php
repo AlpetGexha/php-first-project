@@ -1,14 +1,14 @@
-<?php 
+<?php
 include "../config.php";
 
 if (isset($_GET['id'])) {
 	$id = $_GET['id'];
 
 	$sql = "SELECT image from post where id = '$id'";
-    $results= mysqli_query($db,$sql);
-    $row = $results->fetch_assoc();
-    $image = $row['image'];
-    unlink('../assets/profile_images/'.$image);
+	$results = mysqli_query($db, $sql);
+	$row = $results->fetch_assoc();
+	$image = $row['image'];
+	unlink('../assets/profile_images/' . $image);
 
 	$sql1 = "DELETE FROM `users` WHERE `id`='$id'";
 	$result = $db->query($sql1);
@@ -18,3 +18,4 @@ if (isset($_GET['id'])) {
 		header('Location: index.php');
 	}
 }
+?>

@@ -36,7 +36,7 @@
 </nav>
 
 <style type="text/css">
-body{
- background: #222D32;
- } 
+  body {
+    background: #222D32;
+  }
 </style>

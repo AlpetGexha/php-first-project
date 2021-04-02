@@ -142,7 +142,7 @@ if (isset($_POST['login_submit'])) {
   $sql = "SELECT * from users where username = '$username'";
   $results = mysqli_query($db, $sql);
   $row = $results->fetch_assoc();
-  
+
 
 
   if (mysqli_num_rows($results) != 1) { //Nese perdoruesi nuk ekziton

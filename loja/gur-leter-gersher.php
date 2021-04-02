@@ -1,6 +1,7 @@
 <!DOCTYPE HTML>
 <html>
-<head>    
+
+<head>
     <!-- ------------ Meta ------------------ -->
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <meta charset="utf-8">
@@ -15,6 +16,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
 
 </head>
+
 <body>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous">
     </script>
@@ -30,7 +32,7 @@
         <div class="options" id="o_computer"></div>
         <div class="options" id="o_you"></div>
         <div id="result"></div>
-            <p class="link"><a class="link" href="../lojëra.php">Kthehu tek loj&euml;rat</a></p>
+        <p class="link"><a class="link" href="../lojëra.php">Kthehu tek loj&euml;rat</a></p>
     </div>
 
     <script src="../assets/js/gur_leter.js"></script>

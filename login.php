@@ -55,7 +55,7 @@ if (isset($_SESSION['loggedIn']) && $_SESSION['loggedIn'] == true) {
                 if (!empty($msg)) {
                   echo '<p class="error"> ' . $msg . ' </p>';
                 }
-              
+
                 ?>
                 <label for="username" class="text-info fas fa-user">Username:</label><br>
                 <input type="text" name="username" id="username" class="form-control" required="" placeholder="Username" autofocus="" oninvalid="this.setCustomValidity('Ju lutem shkruani usernamin');" oninput="this.setCustomValidity('');">
@@ -66,7 +66,7 @@ if (isset($_SESSION['loggedIn']) && $_SESSION['loggedIn'] == true) {
                 <input type="password" name="password" id="password" class="form-control" required="" placeholder="Password" oninvalid="this.setCustomValidity('Ju lutem shkruani passwordin');" oninput="this.setCustomValidity('');">
                 <!-- <input type="checkbox" class="form-check-input" onclick="myFunction()" >Shiko Passowrdin -->
                 <div class="showpassword">
-                  <input  type="checkbox" class="form-check-input" id="show_password"><label class="text-info">Shiko passwordin</label>
+                  <input type="checkbox" class="form-check-input" id="show_password"><label class="text-info">Shiko passwordin</label>
                 </div>
                 <a href="forgotPassword.php" class="forgot_link" style="color: red;">Harruat passwordin?</a>
               </div>

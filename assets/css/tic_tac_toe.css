@@ -146,12 +146,14 @@ body {
 .winning-message.show {
     display: flex;
 }
-.link{
+
+.link {
     text-align: center;
     text-decoration: none;
 }
+
 @media screen and (max-height: 250px) {
-    .link{
+    .link {
         position: absolute;
         right: 1px;
         top: -10px;

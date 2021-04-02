@@ -19,21 +19,25 @@ if (isset($_SESSION['ROLE']) &&  $_SESSION['ROLE'] != '1') {
     <title>Admin Users</title>
     <?php include '../items/title_bar_img.php'; ?>
 
- <!-- ------------ Meta ------------------ -->
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta charset="utf-8">
+    <!-- ------------ Meta ------------------ -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta charset="utf-8">
 </head>
 
 <style type="text/css">
-    body ,th, td {
-    color: red;
+    body,
+    th,
+    td {
+        color: red;
     }
+
     .inputat {
         font-weight: bold;
         color: red;
         background-color: #18161b;
     }
-    .inputat:focus{
+
+    .inputat:focus {
         background-color: black;
     }
 </style>

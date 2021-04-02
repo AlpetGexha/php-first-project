@@ -33,82 +33,79 @@ include('items/need_to_login.php');
 
   <?php include 'items/navbar.php'; ?>
 
-  <div class="container mt-5">
-    </head>
 
-    <body>
+  </head>
 
-      <div class="container mt-5">
-        <div class="row">
-          <div class="col">
-            <div class="flip-size">
-              <div class="flip-card-title">
-                Gur-let&euml;r-g&euml;sh&euml;r
-              </div>
-              <div class="flip-card">
-                <div class="flip-card-inner">
-                  <div class="flip-card-front">
-                    <img src="assets/image/gur-leter.png" alt="Avatar" style="width:300px;height:300px;">
-                  </div>
-                  <div class="flip-card-back">
-                    <h1>Gur-let&euml;r-g&euml;sh&euml;r</h1>
-                    <p></p>
-                    <p>pershkrimi</p>
-                    <a href="loja/gur-leter-gersher.php"><button class="btn btn-danger">Luaj Tani</button></a>
-                  </div>
-                </div>
-              </div>
+  <body>
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col">
+          <div class="flip-size">
+            <div class="flip-card-title">
+              Gur-let&euml;r-g&euml;sh&euml;r
             </div>
-          </div>
-
-
-          <div class="col ">
-            <div class="flip-size">
-              <div class="flip-card-title">
-                Tauch to Win
-              </div>
-              <div class="flip-card">
-                <div class="flip-card-inner">
-                  <div class="flip-card-front">
-                    <img src="assets/image/tauch.png" alt="Avatar" style="width:300px;height:300px;">
-                  </div>
-                  <div class="flip-card-back">
-                    <h1>Preke dhe fito</h1>
-                    <p></p>
-                    <p>Duheni t&euml; prekni figuten brenda 0.5s dhe do te fitoni</p>
-                    <a href="loja/tauch-to-win.php"><button class="btn btn-danger">Luaj Tani</button></a>
-                  </div>
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <img src="assets/image/gur-leter.png" alt="Avatar" style="width:300px;height:300px;">
+                </div>
+                <div class="flip-card-back">
+                  <h1>Gur-let&euml;r-g&euml;sh&euml;r</h1>
+                  <p></p>
+                  <p>pershkrimi</p>
+                  <a href="loja/gur-leter-gersher.php"><button class="btn btn-danger">Luaj Tani</button></a>
                 </div>
               </div>
-            </div>
-          </div>
-
-          <div class="col ">
-            <div class="flip-size">
-              <div class="flip-card-title"> 
-                Tic-Tac-Toe
-              </div>
-              <div class="flip-card">
-                <div class="flip-card-inner">
-                  <div class="flip-card-front">
-                    <img src="assets/image/tic-tac-toe.png" alt="Avatar" style="width:300px;height:300px;">
-                  </div>
-                  <div class="flip-card-back">
-                    <h1>Tic-Tac-Toe</h1>
-                    <p></p>
-                    <p>pershkrimi</p>
-                    <a href="loja/tic-tac-toe.php"><button class="btn btn-danger">Luaj Tani</button></a>
-                  </div>
-                </div>
-              </div>
-
-
-
             </div>
           </div>
         </div>
-        <br><br><br>
 
-    </body>
+
+        <div class="col ">
+          <div class="flip-size">
+            <div class="flip-card-title">
+              Tauch to Win
+            </div>
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <img src="assets/image/tauch.png" alt="Avatar" style="width:300px;height:300px;">
+                </div>
+                <div class="flip-card-back">
+                  <h1>Preke dhe fito</h1>
+                  <p></p>
+                  <p>Duheni t&euml; prekni figuten brenda 0.5s dhe do te fitoni</p>
+                  <a href="loja/tauch-to-win.php"><button class="btn btn-danger">Luaj Tani</button></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col ">
+          <div class="flip-size">
+            <div class="flip-card-title">
+              Tic-Tac-Toe
+            </div>
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <img src="assets/image/tic-tac-toe.png" alt="Avatar" style="width:300px;height:300px;">
+                </div>
+                <div class="flip-card-back">
+                  <h1>Tic-Tac-Toe</h1>
+                  <p></p>
+                  <p>pershkrimi</p>
+                  <a href="loja/tic-tac-toe.php"><button class="btn btn-danger">Luaj Tani</button></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    
+      </div>
+      <br><br><br>
+    </div>
+  </body>
 
 </html>
