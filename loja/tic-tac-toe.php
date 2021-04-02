@@ -11,7 +11,7 @@
 </head>
 
 <body>
-    <p class="link" style="text-align: center;"><a class="link" href="../lojëra.php">Kthehu tek loj&euml;rat</a></p>
+    <p class="link" ><a class="link" href="../lojëra.php">Kthehu tek loj&euml;rat</a></p>
     <div class="board" id="board">
         <div class="cell" data-cell></div>
         <div class="cell" data-cell></div>

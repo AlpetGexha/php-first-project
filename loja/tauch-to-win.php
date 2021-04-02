@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>Gur-let&euml;r-g&euml;sh&euml;</title>
+    <title>Tauch to win</title>
 </head>
 <!-- ------------ Meta ------------------ -->
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
