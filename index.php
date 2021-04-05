@@ -54,10 +54,6 @@ include('items/need_to_login.php');
     </div>
     <div class="container mt-5">
 
-        <style>
-
-        </style>
-
         <!-- ------------ Search ------------------ -->
         <form class="form-inline" method="get" action="#">
             <input class="form-control mr-sm-2" type="search" placeholder="Krekoni Postime" name="search_post">
