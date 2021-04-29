@@ -5,7 +5,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
-<nav class="navbar navbar-expand-md bg-dark navbar-dark">
+<nav class="navbar fixed-top navbar-expand-md bg-dark navbar-dark">
   <img class="navbar-brand" src="assets/image/Killerlogo.jpg" alt="logo" style="width:50px;">
   </div>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">

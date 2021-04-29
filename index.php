@@ -70,8 +70,9 @@ include('items/need_to_login.php');
             $result = mysqli_query($db, $sql);
 
 
-
             while (($row = $result->fetch_assoc()) != null) {
+
+                $timestamp = $row['post_data'];
 
                 echo "<div class='jumbotron'>";
                 echo "<h1 class='display-4'>" . $row['emri_post'] . "</h1>";
@@ -84,7 +85,7 @@ include('items/need_to_login.php');
                 echo "<hr class='my-4'>";
                 echo "<p>Postuesi: " . $row['emri'] . " " . $row['mbiemri'] . "</p>";
                 echo "<div class= 'post_time'";
-                echo " <p class='lead'>" . $row['post_data'] . "</p>";
+                echo " <p class='lead'> date(F j, Y,strtotime($timestamp)</p>";
                 echo "</div>";
                 echo "</div>";
             }
