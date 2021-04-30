@@ -85,7 +85,7 @@ include('items/need_to_login.php');
                 echo "<hr class='my-4'>";
                 echo "<p>Postuesi: " . $row['emri'] . " " . $row['mbiemri'] . "</p>";
                 echo "<div class= 'post_time'";
-                echo " <p class='lead'> date(F j, Y,strtotime($timestamp)</p>";
+                echo " <p class='lead'> " . date('F j, Y ', strtotime($timestamp));" </p>";
                 echo "</div>";
                 echo "</div>";
             }
