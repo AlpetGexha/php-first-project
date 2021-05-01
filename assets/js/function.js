@@ -101,7 +101,7 @@
  // Loading Page
  $(document).ready(function () {
 
-     var limit = 4;
+     var limit = 8;
      var start = 0;
      var action = 'inactive';
 
@@ -139,7 +139,7 @@
              start = start + limit;
              setTimeout(function () {
                  load_country_data(limit, start);
-             }, 600);
+             }, 400);
          }
      });
 

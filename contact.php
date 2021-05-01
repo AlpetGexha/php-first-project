@@ -70,8 +70,9 @@ include('items/need_to_login.php');
   <?php include('items/navbar.php'); ?>
   <!-- ------------ Forma Contact ------------------ -->
   <form method="POST" action="server.php">
-
+<br><br><br>
     <div class="container mt-5">
+      
       <div class="contact_box_mesazhi">
         <div class="left_mesazhi"></div>
         <div class="right_mesazhi">
@@ -93,11 +94,11 @@ include('items/need_to_login.php');
       </div>
     </div>
   </form>
-
+<br>
   <div class="loader loader-default" data-text="Mesazhi duke u derguar"></div>
   <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
   <script src="assets/js/function.js"> </script>
-
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
 </body>
 
 </html>
