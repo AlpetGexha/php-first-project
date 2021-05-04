@@ -708,7 +708,7 @@ body {
   z-index: 3;
   color: #fff;
   cursor: default;
-  background-color: red;
+  background-color: black;
   border-color: #337ab7;
 }
 
@@ -717,7 +717,7 @@ body {
 .pagination .disabled a:hover {
   color: #777;
   cursor: not-allowed;
-  background-color: red;
+  background-color: black;
   border-color: #ddd;
 }
 

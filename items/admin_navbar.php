@@ -62,6 +62,7 @@ $row = $results2->fetch_assoc();
     td {
       color: red;
     }
+
   </style>
   <style type="text/css">
 
