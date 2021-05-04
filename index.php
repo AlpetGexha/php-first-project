@@ -38,6 +38,7 @@ include('items/need_to_login.php');
     </script>
 
     <?php include('items/navbar.php'); ?>
+    <br><br><br>
     <div class="TitujtJ_container">
         <div class="TitujtJ">
             <div class="TitujtJ_effect">

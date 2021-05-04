@@ -69,6 +69,7 @@ include('items/need_to_login.php');
   <?php include('items/navbar.php'); ?>
   <!-- ------------ Forma për krijimin e postit ------------------ -->
   <form action="#" method="POST" enctype="multipart/form-data">
+  <br><br><br>
     <div class="container mt-5">
       <div class="center_create_post">
         <?php
@@ -88,7 +89,7 @@ include('items/need_to_login.php');
       </div>
     </div>
   </form>
-
+<br>
   <!-- ----------LOADING (Duke u pustuar)---------- -->
   <div class="loader loader-default" data-text="Duke u postuar"></div>
   <script>
