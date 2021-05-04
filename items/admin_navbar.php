@@ -27,26 +27,23 @@ $row = $results2->fetch_assoc();
 <html>
 
 <head>
-  <!-- ------------ Meta ------------------ -->
+  <title>Admin Users</title>
+  <?php include('../items/title_bar_img.php'); ?>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta charset="utf-8">
-
   <link rel="stylesheet" href="../assets/css/style.css">
-  <!-- ------------ Boostrap css ------------------ -->
   <link href="../assets/css/bootstrap.css" rel="stylesheet" crossorigin="anonymous" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-  <?php include('../items/title_bar_img.php'); ?>
-  <!-- ------------ Scripti Per Iconat ------------------ -->
   <link href="https://cdn.datatables.net/1.10.20/css/dataTables.bootstrap4.min.css" rel="stylesheet" crossorigin="anonymous" />
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js" crossorigin="anonymous"></script>
 
-  <title>Admin Users</title>
+
 </head>
 
 <body>
 
-  <!-- ------------ Boostrap JS ------------------ -->
   <script src=" https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" crossorigin="anonymous"></script>
@@ -62,14 +59,13 @@ $row = $results2->fetch_assoc();
     td {
       color: red;
     }
-
   </style>
   <style type="text/css">
 
   </style>
 
 
-  <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
+  <nav class="sb-topnav sticky-top navbar navbar-expand navbar-dark bg-dark">
     <a class="navbar-brand" href="#">Admin Pannel</a>
     <button class="btn btn-link btn-sm order-1 order-lg-0" id="sidebarToggle" href="#!"><i class="fas fa-bars"></i></button>
     <!-- Navbar-->
@@ -78,11 +74,11 @@ $row = $results2->fetch_assoc();
     <div id="layoutSidenav_nav">
       <nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
         <div class="sb-sidenav-menu">
-          <div class="nav">
+          <div class="nav sticky-top">
             <div class="sb-sidenav-menu-heading">Main</div>
             <a class="nav-link" href="../admin/index.php">
               <div class="sb-nav-link-icon"><i class="fas fa-users"></i></div>
-              P&euml;doruesit
+              P&euml;doruesits
             </a>
             <a class="nav-link" href="../admin/sms_admin.php">
               <div class="sb-nav-link-icon"><i class="fas fa-envelope"></i></div>
@@ -123,15 +119,10 @@ $row = $results2->fetch_assoc();
 
 
     <script>
-      /*!
-       * Start Bootstrap - SB Admin v6.0.3 (https://startbootstrap.com/template/sb-admin)
-       * Copyright 2013-2021 Start Bootstrap
-       * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-sb-admin/blob/master/LICENSE)
-       */
       (function($) {
         "use strict";
 
-        // Add active state to sidbar nav links
+        // Shtoni gjendje aktive në sidebar nav links
         var path = window.location.href; // because the 'href' property of the DOM element is the absolute path
         $("#layoutSidenav_nav .sb-sidenav a.nav-link").each(function() {
           if (this.href === path) {
@@ -139,7 +130,7 @@ $row = $results2->fetch_assoc();
           }
         });
 
-        // Toggle the side navigation
+        // NNdërroni anën e navigation
         $("#sidebarToggle").on("click", function(e) {
           e.preventDefault();
           $("body").toggleClass("sb-sidenav-toggled");
