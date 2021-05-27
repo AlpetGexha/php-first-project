@@ -81,7 +81,8 @@ include('items/need_to_login.php');
     $result   = mysqli_query($db, $select);
 
     //shfaqja e te gjithave postimeve qe i keni bere ju
-    while (($row = $result->fetch_assoc()) != null) {
+    foreach ($result as $key => $row) {
+      
 
       echo "<div class='jumbotron'>";
       echo "<h1 class='display-4'>" . $row['emri_post'] . "</h1>";
