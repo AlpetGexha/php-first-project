@@ -130,7 +130,7 @@ include('items/need_to_login.php');
     }
 
     if (mysqli_num_rows($result) == 0) {
-      echo "<p style='text-align:center; color:red; font-size:20px'> Nuk ka rezultate";
+      echo "<p style='text-align:center; color:#9a9595; font-size:20px'> Nuk ka rezultate";
     }
     ?>
 
