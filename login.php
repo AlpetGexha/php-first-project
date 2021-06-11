@@ -1,7 +1,5 @@
 <?php
 $msg = "";
-?>
-<?php
 include('config.php');
 include('server.php');
 //Pasi te kyqemi nuk kemi nevoj te rikyqemi perseri
