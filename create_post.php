@@ -69,7 +69,6 @@ include('items/need_to_login.php');
   <?php include('items/navbar.php'); ?>
   <!-- ------------ Forma për krijimin e postit ------------------ -->
   <form action="#" method="POST" enctype="multipart/form-data">
-  <br><br><br>
     <div class="container mt-5">
       <div class="center_create_post">
         <?php

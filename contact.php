@@ -70,7 +70,6 @@ include('items/need_to_login.php');
   <?php include('items/navbar.php'); ?>
   <!-- ------------ Forma Contact ------------------ -->
   <form method="POST" action="server.php">
-<br><br><br>
     <div class="container mt-5">
       
       <div class="contact_box_mesazhi">
