@@ -47,9 +47,6 @@
 
 
 
-
-
-
 /* style 2
 
   echo "<div class='jumbotron'>";
