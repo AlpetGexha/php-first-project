@@ -6,12 +6,12 @@ ob_start();
 
 
 if (isset($_POST["limit"], $_POST["start"])) {
-  $sql = "SELECT u.emri, u.mbiemri, p.emri_post, p.body , p.image, p.post_data from post p, users u where p.user_id = u.id  order by p.id DESC LIMIT " . $_POST["start"] . ", " . $_POST["limit"] . ""; // "% $serach %" perafersish fjala qe e shenon per te kerkuar nje postim
-  $result = mysqli_query($db, $sql);
+$sql = "SELECT u.emri, u.mbiemri, p.emri_post, p.body , p.image, p.post_time from post p, users u where p.user_id = u.id  order by p.id DESC LIMIT ".$_POST["start"].", ".$_POST["limit"].""; // "% $serach %" perafersish fjala qe e shenon per te kerkuar nje postim
+ $result = mysqli_query($db, $sql);
 
   while (($row = $result->fetch_assoc()) != null) {
 
-    $timestamp = $row['post_data'];
+    $timestamp = $row['post_time'];
 
     echo "<div class='jumbotron'>";
     echo "<h1 class='display-4'>" . $row['emri_post'] . "</h1>";

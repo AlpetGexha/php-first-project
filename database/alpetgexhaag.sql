@@ -6,6 +6,9 @@
 -- Generation Time: Mar 20, 2021 at 03:49 AM
 -- Server version: 10.4.17-MariaDB
 -- PHP Version: 8.0.2
+DROP DATABASE IF EXISTS `alpetgexhaag`;
+CREATE DATABASE `alpetgexhaag`;
+USE `alpetgexhaag`;
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -27,7 +30,7 @@ SET time_zone = "+00:00";
 -- Table structure for table `mesazhi`
 --
 
-CREATE TABLE `mesazhi` (
+CREATE TABLE IF NOT EXISTS CREATE TABLE `mesazhi` (
   `id` int(11) NOT NULL,
   `mesazhi` longtext NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
@@ -48,7 +51,7 @@ INSERT INTO `mesazhi` (`id`, `mesazhi`) VALUES
 -- Table structure for table `post`
 --
 
-CREATE TABLE `post` (
+CREATE TABLE IF NOT EXISTS CREATE TABLE `post` (
   `id` int(11) NOT NULL,
   `body` text NOT NULL,
   `emri_post` varchar(255) NOT NULL,
@@ -79,7 +82,7 @@ INSERT INTO `post` (`id`, `body`, `emri_post`, `image`, `user_id`, `post_time`) 
 -- Table structure for table `todo`
 --
 
-CREATE TABLE `todo` (
+CREATE TABLE IF NOT EXISTS CREATE TABLE `todo` (
   `id` int(11) NOT NULL,
   `gjerat` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
@@ -100,7 +103,7 @@ INSERT INTO `todo` (`id`, `gjerat`) VALUES
 -- Table structure for table `users`
 --
 
-CREATE TABLE `users` (
+CREATE TABLE IF NOT EXISTS CREATE TABLE `users` (
   `id` int(11) NOT NULL,
   `emri` varchar(255) NOT NULL,
   `mbiemri` varchar(255) NOT NULL,
